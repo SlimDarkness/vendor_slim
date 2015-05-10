@@ -76,7 +76,7 @@ function slimremote()
 
     project="${proj//\//_}"
 
-    git remote add slim "git@github.com:SlimRoms/$pfx$project"
+    git remote add slim "git@github.com:SlimDarkness/$pfx$project"
     echo "Remote 'slim' created"
 }
 
@@ -152,5 +152,5 @@ function slim_push()
         proj="android_$proj"
     fi
 
-    git $path_opt push "ssh://${ssh_name}/SlimRoms/$proj" "HEAD:refs/for/$branch"
+    git $path_opt push "ssh://${ssh_name}/SlimDarkness/$proj" "HEAD:refs/for/$branch"
 }
